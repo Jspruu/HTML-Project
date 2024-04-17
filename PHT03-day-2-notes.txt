@@ -1,0 +1,506 @@
+glend@Glendale MINGW64 ~
+$ rm -r Desktop
+
+glend@Glendale MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{195dae46-998a-11ee-a40a-b447cadd7682}.TM.blf
+ NTUSER.DAT{195dae46-998a-11ee-a40a-b447cadd7682}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{195dae46-998a-11ee-a40a-b447cadd7682}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+glend@Glendale MINGW64 ~
+$ cd Documents
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ ls
+ Day2GitPractice/  'My Pictures'@   OCCPHT03/
+'My Music'@        'My Videos'@     index.txt
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ cd Day2GitPractice
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ touch day2git.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ ls
+day2git.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        day2git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git add day2git.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   day2git.txt
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ mkdir day3html
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ mkdir day4css.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   day2git.txt
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git add ..
+fatal: ..: '..' is outside repository at 'C:/Users/glend/Documents/Day2GitPractice'
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ rm day3html
+rm: cannot remove 'day3html': Is a directory
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ rm -r day3html
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ rm -r day4css
+rm: cannot remove 'day4css': No such file or directory
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ rm -r day4css.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ touch day2html
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ touch day2html.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ touch day3css.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git add .
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   day2git.txt
+        new file:   day2html
+        new file:   day2html.txt
+        new file:   day3css.txt
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   day2git.txt
+        new file:   day2html
+        new file:   day2html.txt
+        new file:   day3css.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    day2html
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ pwd
+/c/Users/glend/Documents/Day2GitPractice
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git commit -m "Added new files"
+[master (root-commit) 801c4e2] Added new files
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 day2git.txt
+ create mode 100644 day2html
+ create mode 100644 day2html.txt
+ create mode 100644 day3css.txt
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    day2html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+
+$ git log --oneline
+801c4e2 (HEAD -> master) Added new files
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    day2html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    day2html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git add .
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    day2html
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git commit -m "Added new files"
+[master c833621] Added new files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 day2html
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git branch mybranch
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git branch
+* master
+  mybranch
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git checkout mybranch
+Switched to branch 'mybranch'
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ code .
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git add .
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git add .
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   day2git.txt
+        modified:   day2html.txt
+        modified:   day3css.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git add .
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   day2git.txt
+        modified:   day2html.txt
+        modified:   day3css.txt
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git commit -m "Added text on the files"
+[mybranch cb45e5a] Added text on the files
+ 3 files changed, 4 insertions(+)
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ ^C
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git log -online
+fatal: unrecognized argument: -online
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ ^C
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ ^C
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git log --oneline
+cb45e5a (HEAD -> mybranch) Added text on the files
+c833621 (master) Added new files
+801c4e2 Added new files
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ ^C
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git status
+On branch mybranch
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (mybranch)
+$ git checkout master
+Switched to branch 'master'
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+
+$ git merge mybranch
+Updating c833621..cb45e5a
+Fast-forward
+ day2git.txt  | 2 ++
+ day2html.txt | 1 +
+ day3css.txt  | 1 +
+ 3 files changed, 4 insertions(+)
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git branch
+* master
+  mybranch
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ cd ..
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ cd
+
+glend@Glendale MINGW64 ~
+$ cd Documents
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ git remote add origin https://github.com/Jspruu/Day2GitandGithub.git
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ cd Documents
+bash: cd: Documents: No such file or directory
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ cd
+
+glend@Glendale MINGW64 ~
+$ cd Documents
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ ls
+ Day2GitPractice/  'My Pictures'@   OCCPHT03/
+'My Music'@        'My Videos'@     index.txt
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ cd Day2GitPractice
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git remote add origin https://github.com/Jspruu/Day2GitandGithub.git
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Jspruu/Day2GitandGithub.git'
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git add .
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git commit -m "Add to remote repo"
+On branch master
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git remote -v
+origin  https://github.com/Jspruu/Day2GitandGithub.git (fetch)
+origin  https://github.com/Jspruu/Day2GitandGithub.git (push)
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git push -u origin master
+
+
+fatal: User cancelled dialog.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Username for 'https://github.com':
+
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Jspruu/Day2GitandGithub.git/'
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git push -u origin master
+
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ ^C
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (10/10), 748 bytes | 748.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Jspruu/Day2GitandGithub.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ ^C
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git remote -v
+origin  https://github.com/Jspruu/Day2GitandGithub.git (fetch)
+origin  https://github.com/Jspruu/Day2GitandGithub.git (push)
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git push -u origin master
+To https://github.com/Jspruu/Day2GitandGithub.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Jspruu/Day2GitandGithub.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git commit -m "Add to remote repo"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ git clone  https://github.com/Jspruu/Day2GitandGithub.git
+Cloning into 'Day2GitandGithub'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 13 (delta 2), reused 9 (delta 1), pack-reused 0
+Receiving objects: 100% (13/13), done.
+Resolving deltas: 100% (2/2), done.
+
+glend@Glendale MINGW64 ~/Documents/Day2GitPractice (master)
+$ cd
+
+glend@Glendale MINGW64 ~
+$ cd Documents
+
+glend@Glendale MINGW64 ~/Documents (master)
+$ rm -rf .git
+
+glend@Glendale MINGW64 ~/Documents
+$ git clone  https://github.com/Jspruu/Day2GitandGithub.git
+Cloning into 'Day2GitandGithub'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 13 (delta 2), reused 9 (delta 1), pack-reused 0
+Receiving objects: 100% (13/13), done.
+Resolving deltas: 100% (2/2), done.
+
+glend@Glendale MINGW64 ~/Documents
+
+

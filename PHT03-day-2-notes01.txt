@@ -1,0 +1,28 @@
+mkdir Day2GitPractice
+cd Day2GitPractice
+pwd
+git init
+touch day2git.txt
+git status
+git add day2git.txt
+ git status
+git add ..
+touch day2html.txt
+touch day3css.txt
+git add .
+git commit -m "Added new files"
+git log --oneline
+git branch mybranch
+git branch
+git checkout mybranch
+code .
+git branch
+git status
+(AFTER MAKING CHANGES ON ANY LINE OF CODES) then
+git add .
+git status
+git commit -m "Added text on the files"
+git log --oneline
+git checkout master
+git merge mybranch
+git status

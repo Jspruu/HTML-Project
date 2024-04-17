@@ -1,0 +1,11 @@
+repositories
+new
+Day2GitandGithub
+untick the Add a README file
+
+rm -rf .git - remove the master in directory
+
+
+github account:
+user: jspru01@gmail.com
+pw: J@sper0102

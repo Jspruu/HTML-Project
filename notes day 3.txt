@@ -1,0 +1,78 @@
+<form>
+            <h3 style="background-color: lightsalmon;"> Sample Form </h3>
+
+            <label for="name"> Name: </label>
+            <input type="text" id="name" required />
+
+            <br />
+
+            <label for="messages"> Message: </label>
+            <textarea>
+                id="messages"
+                rows="4"
+                cols="50"
+                placeholder="Enter a message here" required
+            </textarea>
+
+            <br />
+
+            <label for="gender"> Gender</label>
+            <select id="gender">
+                <option> Male </option>
+                <option> Female </option>
+            </select>
+
+            <br />
+
+            <input type="radio" id="option 1" name="options">
+            <label for="option1"> Option 1</label>
+            <input type="radio" id="option 1" name="options">
+            <label for="option2"> Option 2</label>
+            <input type="radio" id="option 1" name="options">
+            <label for="option3"> Option 3</label>
+
+            <br />
+
+            <input type=""
+        </form>
+
+
+<!-- TABLES -->
+    <table border="4">
+      <thead>
+        <!-- Table Head -->
+        <tr>
+          <!-- table row -->
+          <th>Name</th>
+          <!-- table headers -->
+          <th colspan="2">Details</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Table Body -->
+        <tr>
+          <td rowspan="2">Jane</td>
+          <!-- table data cell -->
+          <td rowspan="2">28 years old</td>
+          <td>New York</td>
+        </tr>
+
+        <tr>
+          <td>Philippines</td>
+        </tr>
+
+        <tr>
+          <td>Jon</td>
+          <td>22 years old</td>
+          <td>Vancouver</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <!-- Table Foot-->
+        <tr>
+          <td colspan="3">Total: 2 people</td>
+        </tr>
+      </tfoot>
+    </table>
